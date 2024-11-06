@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+   <h1> COUNTRY EXPLORE</h1>
+  </header>
+
+
+  <!-- Main Page Content -->
+  <div id="mainPage" class="container">
+    <input type="text" id="search" placeholder="Search for a country" oninput="searchCountries()">
+    <button id="searchButton" onclick="searchCountries()">Search</button>
+    <div id="countryList" class="country-list"></div>
+    <div id="loadMoreContainer" class="load-more-container">
+      <button id="loadMoreButton" onclick="loadMoreCountries()">Show More</button>
+    </div>
+  </div>
+  <div id="favoritesContainer">
+    <h3>Favourite Country</h3>
+    <ul id="favoritesList"></ul>
+</div>
+  
+ <!-- Country Details Page -->
+ <div id="countryDetailsPage" style="display: none;">
+    <div id="countryDetails" class="details-box">
+    </div>
+    
+    <div class="details-actions">
+        <button id="backButton" class="action-btn1"> Back</button>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-content">
+        <div class="about-section">
+            <h2>Mayank Kunjam</h2>
+            <p>I am a web developer passionate about building web applications that enhance user experience.</p>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p><strong>Address:</strong> jawanga, Dantewada, Chhattisgarh</p>
+            <p><strong>Location:</strong> Dantewada, Chhattisgarh</p>
+            <p><strong>Email:</strong> mayankkunjam23@navgurukul.org</p>
+            <p><strong>Phone:</strong> +91 6261946153</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Mayank. All Rights Reserved.</p>
+    </div>
+</footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

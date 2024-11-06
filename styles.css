@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8985a5, #4b248e); 
+    overflow-x: hidden;
+  }
+  
+  .header {
+    background: linear-gradient(to top, #9cb8c6, #9f6fb9); 
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+  }
+  
+  .header h1 {
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;   
+     background-image: url('map.jpg'); 
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+  }
+  .container {
+    padding: 20px;
+    
+    
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  #search {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    
+  }
+  
+  #searchButton {
+    background-color: #007BFF;
+    color: white;
+     padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .country-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .country-card {
+    background: linear-gradient(to bottom, #587243, #491616); /* Gradient from left to right */
+    border: 4px solid;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 150px;
+    border-radius: 40px;
+    border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    animation: rainbow 3s linear infinite;
+  }
+  
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .country-card img {
+    width: 100%;
+    height: 15vh;
+    border-radius: 5px;
+  }
+  
+  
+  
+
+  
+  .details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b465d;
+    padding: 20px;
+  }
+  
+  /* Style for the details box */
+  .details-box {
+    background: linear-gradient(to top, #6aef04, #449158); 
+    padding: 20px; 
+         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%;              
+    max-width: 600px;         
+    margin: 20px auto;        
+    text-align: center;       
+    position: relative;  
+    border: 5px solid;
+    border-radius: 50px;
+    border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    animation: rainbow 3s linear infinite; 
+    
+  }
+  
+
+
+  /* Style for the 'Back' button inside the details box */
+  .details-box button {
+    position: absolute;       
+    top: 10px;                
+    left: 10px;               
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+ 
+  .details-box img {
+    border-radius: 5px;  
+    margin-bottom: 20px;  
+  }
+  
+  .details-box h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+ 
+ 
+  
+
+
+
+  /* Style for the 'Back' button */
+  button {
+    padding: 10px 15px;
+    background: linear-gradient(to top, #08022c, #6d350a); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 0px; 
+    color: #f0f0f0;
+    
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  .action-btn1{
+    padding: 10px 15px;
+    background-color: #49156a;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 0px; 
+    color: #f0f0f0;
+    margin-left: 47%;
+    width: 100px;
+  }
+  .action-btn1:hover {
+    background-color: #572d2d;
+  }
+
+ /* Style for the footer */
+
+footer {
+    background-color: #644a4a;
+    padding: 5px;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.about-section, .contact-details {
+    width: 100%;
+}
+
+.about-section h2, .contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 1px;
+
+}
+
+.about-section p, .contact-details p {
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 5px;
+    color: #aaa;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+
+/* Style for the favourite country box */
+
+
+#favoritesContainer {
+    position: fixed;
+    top: 50px; 
+    right: 20px;
+    width: 250px;
+    max-height: 500px; 
+    overflow-y: auto;
+    background: linear-gradient(to right, #ff7e5f, #6d350a);
+    border: 5px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    animation: rainbow 3s linear infinite;   
+}
+
+
+#favoritesContainer h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#favoritesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#favoritesList li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#favoritesList li:hover {
+    background-color: #f0f0f0;
+}
+
+#favoritesList img {
+    margin-right: 10px;
+    width: 30px;
+    height: 20px;
+}
